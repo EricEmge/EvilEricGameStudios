@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games — Your Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .studio-name {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #ffffff;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: #888;
+            font-weight: 300;
+        }
+
+        .game-section {
+            margin-bottom: 80px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 60px;
+        }
+
+        .game-section:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .game-title {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .game-status {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #ff6b6b;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .game-status.released {
+            color: #4ecdc4;
+        }
+
+        .game-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
+            text-align: center;
+            color: #d0d0d0;
+        }
+
+        .platforms {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+            color: #aaa;
+        }
+
+        .store-links {
+            text-align: center;
+        }
+
+        .store-links a {
+            color: #4ecdc4;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .store-links a:hover {
+            color: #ffffff;
+        }
+
+        .store-links a:not(:last-child)::after {
+            content: " |";
+            color: #666;
+            margin-left: 15px;
+        }
+
+        .placeholder-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+            border: 2px solid #333;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 600px) {
+            .studio-name {
+                font-size: 2rem;
+            }
+            
+            .game-title {
+                font-size: 1.6rem;
+            }
+            
+            .game-description {
+                font-size: 1rem;
+            }
+            
+            .store-links a {
+                display: block;
+                margin: 10px 0;
+            }
+            
+            .store-links a:not(:last-child)::after {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="studio-name">YOUR STUDIO</h1>
+            <p class="tagline">Crafting Worlds, Building Dreams</p>
+        </header>
+
+        <main>
+            <!-- Current/Upcoming Game -->
+            <section class="game-section">
+                <h2 class="game-title">Mystic Realms: Awakening</h2>
+                <div class="game-status">Currently in Development</div>
+                <div class="placeholder-image">Game Screenshot Placeholder</div>
+                <p class="game-description">
+                    Embark on an epic journey through mystical realms where magic and technology collide! 
+                    Discover ancient secrets, master powerful spells, and forge alliances in a world where 
+                    every choice shapes your destiny. Experience breathtaking landscapes and engage in 
+                    strategic combat as you ascend to become a legendary guardian.
+                </p>
+                <p class="platforms">
+                    Currently in development for PC, Mac, PlayStation 5, Xbox Series X|S, and Nintendo Switch 2.
+                </p>
+            </section>
+
+            <!-- Released Game -->
+            <section class="game-section">
+                <h2 class="game-title">Shadow's Edge</h2>
+                <div class="game-status released">Available Now</div>
+                <div class="placeholder-image">Game Screenshot Placeholder</div>
+                <p class="game-description">
+                    Navigate the delicate balance between light and shadow in this atmospheric puzzle-platformer. 
+                    Use your unique shadow manipulation abilities to solve intricate puzzles, traverse dangerous 
+                    environments, and uncover the truth behind a world trapped between dimensions. 
+                    Every shadow tells a story in this hauntingly beautiful adventure.
+                </p>
+                <p class="platforms">
+                    Available on PC, Mac, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X|S, and Nintendo Switch.
+                </p>
+                <div class="store-links">
+                    <a href="#" target="_blank">Steam</a>
+                    <a href="#" target="_blank">GoG</a>
+                    <a href="#" target="_blank">Epic Games</a>
+                    <a href="#" target="_blank">PlayStation Store</a>
+                    <a href="#" target="_blank">Xbox Store</a>
+                </div>
+            </section>
+
+            <!-- Another Released Game -->
+            <section class="game-section">
+                <h2 class="game-title">Neon Runner</h2>
+                <div class="game-status released">Available Now</div>
+                <div class="placeholder-image">Game Screenshot Placeholder</div>
+                <p class="game-description">
+                    Race through a cyberpunk cityscape in this high-octane endless runner. 
+                    Dodge obstacles, collect power-ups, and customize your character as you 
+                    sprint through neon-lit streets and towering skyscrapers. With procedurally 
+                    generated levels and competitive leaderboards, every run is a new challenge.
+                </p>
+                <p class="platforms">
+                    Available on PC, Mac, iOS, and Android.
+                </p>
+                <div class="store-links">
+                    <a href="#" target="_blank">Steam</a>
+                    <a href="#" target="_blank">App Store</a>
+                    <a href="#" target="_blank">Google Play</a>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
